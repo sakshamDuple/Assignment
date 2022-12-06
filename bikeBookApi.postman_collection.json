@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "c30c0c70-1721-48a4-9f25-6a5cdeacbf33",
+		"name": "bikeBookApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addNewBike",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pickup_date\" : \"10110\",\r\n    \"dropoff_date\" : 250,\r\n    \"rider_name\": \"ram\",\r\n    \"rider_height\" : \"6.5\",\r\n    \"frame_type\" : \"ddd\",\r\n    \"collection_time\" : \"AM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/bike-booking/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bike-booking",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBookedBikeData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/bike-booking/638d7dcecd108e91f91a2399",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bike-booking",
+						"638d7dcecd108e91f91a2399"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBookedBike",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/bike-booking/638d7e9ccd108e91f91a239c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bike-booking",
+						"638d7e9ccd108e91f91a239c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookedBikeDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/bike-booking/638d7dcecd108e91f91a2399",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"bike-booking",
+						"638d7dcecd108e91f91a2399"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
